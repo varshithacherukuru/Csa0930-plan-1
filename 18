@@ -1,0 +1,43 @@
+public class Main {
+    public static void main(String[] args) {
+        // Initializing the variables
+        int num1 = 0;
+        int num2 = 0;
+        int num3 = 0;
+        int shortestPath = 0;
+
+        // Defining the for loops
+        for (int i = 0; i < 10; i++) {
+            num1++;
+        }
+        for (int j = 0; j < 5; j++) {
+            num2++;
+        }
+        for (int k = 0; k < 20; k++) {
+            num3++;
+        }
+
+        // Finding the shortest path
+        int path1 = num1;
+        int path2 = num2;
+        int path3 = num3;
+        shortestPath = path1;
+        switch (shortestPath) {
+            case path2:
+                if (path2 < shortestPath) {
+                    shortestPath = path2;
+                }
+                break;
+            case path3:
+                if (path3 < shortestPath) {
+                    shortestPath = path3;
+                }
+                break;
+            default:
+                break;
+        }
+
+        // Printing the shortest path
+        System.out.println("The shortest path is: " + shortestPath);
+    }
+}
