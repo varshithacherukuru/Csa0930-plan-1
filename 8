@@ -1,0 +1,20 @@
+import java.util.Arrays;
+
+public class Main {
+    public static void main(String[] args) {
+        // Creating two arrays with different lengths
+        int[] array1 = {1, 2, 3};
+        int[] array2 = {1, 2, 3, 4, 5};
+
+        // Finding the length of the smallest array
+        int length = Math.min(array1.length, array2.length);
+
+        // Making the arrays equal to the length of the smallest array
+        array1 = Arrays.copyOf(array1, length);
+        array2 = Arrays.copyOf(array2, length);
+
+        // Printing the arrays after making them equal
+        System.out.println("Array 1: " + Arrays.toString(array1));
+        System.out.println("Array 2: " + Arrays.toString(array2));
+    }
+}
