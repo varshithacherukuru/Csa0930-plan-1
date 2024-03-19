@@ -1,0 +1,32 @@
+public class Main {
+    public static void main(String[] args) {
+        // Implicit conversion (widening)
+        byte byteVal = 120;
+        short shortVal = byteVal; // Implicit conversion from byte to short
+        int intVal = shortVal; // Implicit conversion from short to int
+        long longVal = intVal; // Implicit conversion from int to long
+        float floatVal = longVal; // Implicit conversion from long to float
+        double doubleVal = floatVal; // Implicit conversion from float to double
+        char charVal = 'A'; // Implicit conversion from int to char
+        boolean booleanVal = true; // Implicit conversion from boolean to boolean
+
+        // Explicit conversion (narrowing)
+        long longVal2 = 9223372036854775807L;
+        int intVal2 = (int) longVal2; // Explicit conversion from long to int
+        short shortVal2 = (short) intVal2; // Explicit conversion from int to short
+        byte byteVal2 = (byte) shortVal2; // Explicit conversion from short to byte
+        double doubleVal2 = 2.718281828;
+        float floatVal2 = (float) doubleVal2; // Explicit conversion from double to float
+        boolean booleanVal2 = false;
+        char charVal2 = (char) intVal2; // Explicit conversion from int to char
+
+        // Overflow and underflow scenarios
+        byte byteVal3 = Byte.MAX_VALUE;
+        byteVal3++; // Overflow scenario
+        System.out.println("Overflowed byte value: " + byteVal3);
+
+        byte byteVal4 = Byte.MIN_VALUE;
+        byteVal4--; // Underflow scenario
+        System.out.println("Underflowed byte value: " + byteVal4);
+    }
+}
