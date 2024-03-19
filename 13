@@ -1,0 +1,31 @@
+public class Main {
+    public static void main(String[] args) {
+        // Defining three numbers
+        int num1 = 10;
+        int num2 = 20;
+        int num3 = 30;
+
+        // Using nested if statements to find which loop contains the greatest value
+        int max = Integer.MIN_VALUE;
+        if (num1 > max) {
+            max = num1;
+            if (num2 > max) {
+                System.out.println("The greatest value is in the second loop.");
+            } else if (num3 > max) {
+                System.out.println("The greatest value is in the third loop.");
+            } else {
+                System.out.println("The greatest value is in the first loop.");
+            }
+        } else if (num2 > max) {
+            max = num2;
+            if (num3 > max) {
+                System.out.println("The greatest value is in the third loop.");
+            } else {
+                System.out.println("The greatest value is in the second loop.");
+            }
+        } else {
+            max = num3;
+            System.out.println("The greatest value is in the third loop.");
+        }
+    }
+}
