@@ -1,0 +1,31 @@
+public class Main {
+    public static void main(String[] args) {
+        // Creating arrays A and B
+        int[] A = new int[9];
+        int[] B = new int[9];
+
+        // Populating array A
+        for (int i = 0; i < A.length; i++) {
+            A[i] = i + 1;
+        }
+
+        // Populating array B
+        for (int i = 0; i < B.length; i++) {
+            B[i] = B.length - i;
+        }
+
+        // Printing array A
+        System.out.println("Array A:");
+        for (int i = 0; i < A.length; i++) {
+            System.out.print(A[i] + " ");
+        }
+        System.out.println();
+
+        // Printing array B
+        System.out.println("Array B:");
+        for (int i = 0; i < B.length; i++) {
+            System.out.print(B[i] + " ");
+        }
+        System.out.println();
+    }
+}
