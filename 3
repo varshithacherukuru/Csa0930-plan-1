@@ -1,0 +1,46 @@
+public class Main {
+    public static void main(String[] args) {
+        // Creating strings using constructors
+        String str1 = new String("Hello, World!");
+        String str2 = new String(new char[] {'H', 'e', 'l', 'l', 'o'});
+        String str3 = new String("Java is a programming language");
+
+        // Length method
+        System.out.println("Length of str1: " + str1.length());
+
+        // CharAt method
+        System.out.println("Character at index 0 in str3: " + str3.charAt(0));
+
+        // Concat method
+        String str4 = str1.concat(" I love Java!");
+        System.out.println(str4);
+
+        // Substring method
+        String str5 = str3.substring(0, 10);
+        System.out.println(str5);
+
+        // IndexOf method
+        System.out.println("Index of 'a' in str3: " + str3.indexOf('a'));
+
+        // Contains method
+        System.out.println("Does str3 contain 'programming'? " + str3.contains("programming"));
+
+        // Replace method
+        String str6 = str3.replace("Java", "Python");
+        System.out.println(str6);
+
+        // ToUpperCase and ToLowerCase methods
+        String str7 = str3.toUpperCase();
+        String str8 = str3.toLowerCase();
+        System.out.println("Uppercase: " + str7);
+        System.out.println("Lowercase: " + str8);
+
+        // Trim method
+        String str9 = " Hello, World! ";
+        System.out.println("Trimmed string: " + str9.trim());
+
+        // Split method
+        String[] words = str3.split(" ");
+        System.out.println("Number of words in str3: " + words.length);
+    }
+}
