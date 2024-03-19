@@ -1,0 +1,22 @@
+public class Main {
+    public static void main(String[] args) {
+        byte byteVal = 120;
+        short shortVal = 32767;
+        int intVal = 2147483647;
+        long longVal = 9223372036854775807L;
+
+      
+        float floatVal = 3.1415926f;
+        double doubleVal = 2.718281828;
+        char charVal = 'A';
+        boolean booleanVal = true;
+        System.out.println("Byte: " + byteVal);
+        System.out.println("Short: " + shortVal);
+        System.out.println("Int: " + intVal);
+        System.out.println("Long: " + longVal);
+        System.out.println("Float: " + floatVal);
+        System.out.println("Double: " + doubleVal);
+        System.out.println("Char: " + charVal);
+        System.out.println("Boolean: " + booleanVal);
+    }
+}
