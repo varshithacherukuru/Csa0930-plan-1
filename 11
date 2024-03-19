@@ -1,0 +1,16 @@
+public class Main {
+    public static void main(String[] args) {
+        // Defining the ages of the two brothers
+        int olderBrotherAge = 56;
+        int ageDifference = 4; // Assuming the age difference is 4 instead of more than 3
+        int youngerBrotherAge = 28 - ageDifference;
+
+        // Finding the age of the younger brother when the older brother was 5
+        int olderBrotherAgeAt5 = 5;
+        int youngerBrotherAgeAt5 = olderBrotherAgeAt5 + ageDifference;
+
+        // Printing the ages of the two brothers
+        System.out.println("The age of the younger brother when the older brother is 56 is: " + (olderBrotherAge - (olderBrotherAge - youngerBrotherAge)));
+        System.out.println("The age of the younger brother when the older brother was 5 is: " + youngerBrotherAgeAt5);
+    }
+}
