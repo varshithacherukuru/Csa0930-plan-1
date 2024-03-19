@@ -1,0 +1,23 @@
+public class Main {
+    public static void main(String[] args) {
+        // Defining three numbers
+        int num1 = 10;
+        int num2 = 20;
+        int num3 = 30;
+
+        // Using nested if statements to find which if statement contains the greatest value
+        if (num1 > num2) {
+            if (num1 > num3) {
+                System.out.println("The greatest value is in the first if statement.");
+            } else {
+                System.out.println("The greatest value is in the third if statement.");
+            }
+        } else {
+            if (num2 > num3) {
+                System.out.println("The greatest value is in the second if statement.");
+            } else {
+                System.out.println("The greatest value is in the third if statement.");
+            }
+        }
+    }
+}
