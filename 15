@@ -1,0 +1,33 @@
+public class Main {
+    public static void main(String[] args) {
+        // Defining the array
+        int[] numbers = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+
+        // Initializing the count of prime numbers
+        int count = 0;
+
+        // Iterating through the array elements using an enhanced for loop
+        for (int number : numbers) {
+            // Checking if the number is prime
+            if (isPrime(number)) {
+                count++;
+            }
+        }
+
+        // Printing the number of prime numbers
+        System.out.println("The number of prime numbers in the array is: " + count);
+    }
+
+    // Method to check if a number is prime
+    public static boolean isPrime(int number) {
+        if (number <= 1) {
+            return false;
+        }
+        for (int i = 2; i <= Math.sqrt(number); i++) {
+            if (number % i == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+}
