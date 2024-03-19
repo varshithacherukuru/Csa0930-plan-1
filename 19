@@ -1,0 +1,48 @@
+public class Main {
+    public static void main(String[] args) {
+        // Initializing the variables
+        boolean input1 = false;
+        boolean input2 = false;
+        boolean output = false;
+
+        // Implementing OR gate
+        input1 = true;
+        input2 = false;
+        if (input1 || input2) {
+            output = true;
+        } else {
+            output = false;
+        }
+        System.out.println("OR gate output: " + output);
+
+        // Implementing AND gate
+        input1 = true;
+        input2 = true;
+        if (input1 && input2) {
+            output = true;
+        } else {
+            output = false;
+        }
+        System.out.println("AND gate output: " + output);
+
+        // Implementing OR gate with short-circuit evaluation
+        input1 = false;
+        input2 = true;
+        if (input1 || input2) {
+            output = true;
+        } else {
+            output = false;
+        }
+        System.out.println("OR gate output with short-circuit evaluation: " + output);
+
+        // Implementing AND gate with short-circuit evaluation
+        input1 = false;
+        input2 = false;
+        if (input1 && input2) {
+            output = true;
+        } else {
+            output = false;
+        }
+        System.out.println("AND gate output with short-circuit evaluation: " + output);
+    }
+}
