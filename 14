@@ -1,0 +1,20 @@
+public class Main {
+    public static void main(String[] args) {
+        // Defining the series
+        int[] series = {1, 5, 11, 19};
+
+        // Finding the missing numbers in the series
+        int expectedDifference = 4;
+        int previousNumber = series[0];
+        System.out.println("Missing numbers in the series:");
+        for (int i = 1; i < series.length; i++) {
+            int difference = series[i] - previousNumber;
+            if (difference != expectedDifference) {
+                for (int j = previousNumber + expectedDifference; j < series[i]; j++) {
+                    System.out.println(j);
+                }
+            }
+            previousNumber = series[i];
+        }
+    }
+}
