@@ -1,0 +1,19 @@
+public class Main {
+    public static void main(String[] args) {
+        // Initializing the arrays
+        int[] A = {1, 2, 3, 4, 5};
+        int[] B = {5, 4, 3, 2, 1};
+
+        // Shifting values from left to right if A > B
+        for (int i = 0; i < A.length; i++) {
+            if (A[i] > B[i]) {
+                A[i] = A[i] << 1;
+                B[i] = B[i] >> 1;
+            }
+        }
+
+        // Printing the arrays
+        System.out.println("Array A after shifting: " + Arrays.toString(A));
+        System.out.println("Array B after shifting: " + Arrays.toString(B));
+    }
+}
