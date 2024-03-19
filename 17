@@ -1,0 +1,45 @@
+import java.util.Random;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // Initializing the variables
+        int secretNumber = 0;
+        int userGuess = 0;
+        int luckGuess = 0;
+        int count = 0;
+        boolean correctGuess = false;
+
+        // Generating the secret number
+        Random random = new Random();
+        secretNumber = random.nextInt(10) + 1;
+
+        // Creating a Scanner object for user input
+        Scanner scanner = new Scanner(System.in);
+
+        // Finding the luck guess
+        System.out.println("Guess a number between 1 and 10:");
+        while (!correctGuess) {
+            userGuess = scanner.nextInt();
+            count++;
+            switch (userGuess) {
+                case secretNumber:
+                    System.out.println("Congratulations! You guessed the correct number.");
+                    correctGuess = true;
+                    break;
+                case secretNumber - 1:
+                case secretNumber + 1:
+                    System.out.println("Close! Your guess is off by 1.");
+                    if (count == 3) {
+                        luckGuess = userGuess;
+                    }
+                    break;
+                default:
+                    System.out.println("Sorry, that's not even close.");
+            }
+        }
+
+        // Printing the luck guess
+        System.out.println("Your luck guess is: " + luckGuess);
+    }
+}
